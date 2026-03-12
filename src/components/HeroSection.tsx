@@ -55,9 +55,9 @@ export function HeroSection() {
 
             <div className="flex gap-4 pt-2">
               {[
-                { icon: Github, href: "#", label: "GitHub" },
-                { icon: Linkedin, href: "#", label: "LinkedIn" },
-                { icon: Mail, href: "mailto:votre@email.com", label: "Email" },
+                { icon: Github, href: "https://github.com/Mammspaghetti/my-digital-portfolio", label: "GitHub" },
+                { icon: Linkedin, href: "https://www.linkedin.com/in/guillaume-pitis-a49692188/", label: "LinkedIn" },
+                { icon: Mail, href: "gpitis@hotmail.fr", label: "Email" },
               ].map((social) => (
                 <a
                   key={social.label}
