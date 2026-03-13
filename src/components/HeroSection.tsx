@@ -58,7 +58,7 @@ export function HeroSection() {
               {[
                 { icon: Github, href: "https://github.com/Mammspaghetti/my-digital-portfolio", label: "GitHub" },
                 { icon: Linkedin, href: "https://www.linkedin.com/in/guillaume-pitis-a49692188/", label: "LinkedIn" },
-                { icon: Mail, href: "gpitis@hotmail.fr", label: "Email" },
+                { icon: Mail, href: "mailto:gpitis@hotmail.fr", label: "Email" },
               ].map((social) => (
                 <a
                   key={social.label}
