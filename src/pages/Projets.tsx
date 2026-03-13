@@ -18,7 +18,7 @@ const projects = [
     title: "Pacific Sound System (Java)",
     description:
       "Lecteur de playlists de musiques/sons prédéfinis dans un dossier assets avec Java Swing.",
-    tags: ["Java", "JRE-21", "Swing", "Eclipse"],
+    tags: ["Java (21)", "JRE-21", "Swing", "Eclipse"],
     downloadUrl: "/downloads/GPSoundSystem.jar",
     githubUrl: "https://github.com/Mammspaghetti/GPSoundSystem",
     info: "Application desktop Java Swing capable de lire des fichiers WAV stockés dans un dossier assets.",
@@ -53,10 +53,10 @@ const projects = [
   {
     title: "CatFight",
     description: "",
-    tags: [],
+    tags: ["Java (11)", "JavaX", "AWT"],
     downloadUrl: "",
     githubUrl: "https://github.com/Mammspaghetti/CatFight",
-    info: "In Progress",
+    info: "Phase de Combat en tour par tour (Pokémon Like)",
     color: "terminal-yellow",
   },
   {
@@ -65,7 +65,7 @@ const projects = [
     tags: [],
     githubUrl: "", // ton repo
     linkUrl: "", // lien direct vers Swagger / API
-    info: "In Progress",
+    info: "Phase de combat tour par tour entre 2 chats",
     color: "terminal-pink",
   },
   // {
