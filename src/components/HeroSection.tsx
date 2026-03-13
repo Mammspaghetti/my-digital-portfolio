@@ -5,8 +5,9 @@ import { Button } from "@/components/ui/button";
 
 const codeLines = [
   { prefix: "const", keyword: " developer", op: " = {" },
-  { prefix: "  name:", value: ' "Votre Nom",' },
+  { prefix: "  name:", value: ' "Guillaume PITIS",' },
   { prefix: "  title:", value: ' "Développeur Full-Stack",' },
+  { prefix: "  mail:", value: ' "gpitis@hotmail.fr",' },
   { prefix: "  passions:", value: ' ["code", "innovation", "open-source"],' },
   { prefix: "  available:", value: " true," },
   { prefix: "}", op: ";" },
