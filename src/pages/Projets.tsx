@@ -51,20 +51,20 @@ const projects = [
     color: "terminal-green",
   },
   {
-    title: "CatFight",
-    description: "",
+    title: "CatFight (Work in Progress)",
+    description: "Phase de Combat en tour par tour (Pokémon Like)",
     tags: ["Java (11)", "JavaX", "AWT"],
     downloadUrl: "",
     githubUrl: "https://github.com/Mammspaghetti/CatFight",
-    info: "Phase de Combat en tour par tour (Pokémon Like)",
+    info: "",
     color: "terminal-yellow",
   },
   {
-    title: "SpaghettiCountries Interractive (NodeJS)",
-    description: "",
-    tags: [],
+    title: "SpaghettiCountries Map Interractive (NodeJS)",
+    description: "Réutilise API REST SpaghettiCountries pour afficher une carte avec les pays chargé par le back ci-dessus",
+    tags: ['React', 'Leaflet', 'NodeJS'],
     githubUrl: "", // ton repo
-    linkUrl: "", // lien direct vers Swagger / API
+    linkUrl: "/map", // lien direct vers Swagger / API
     info: "Phase de combat tour par tour entre 2 chats",
     color: "terminal-pink",
   },
