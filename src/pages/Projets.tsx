@@ -51,11 +51,11 @@ const projects = [
     color: "terminal-green",
   },
   {
-    title: "Pacific Sound System v2.0 (Java)",
+    title: "CatFight",
     description: "",
     tags: [],
     downloadUrl: "",
-    githubUrl: "",
+    githubUrl: "https://github.com/Mammspaghetti/CatFight",
     info: "In Progress",
     color: "terminal-yellow",
   },
