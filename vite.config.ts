@@ -4,7 +4,7 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig({
-  base: "./", // <-- chemins relatifs
+  base: "/my-digital-portfolio/", // <-- chemins relatifs
   plugins: [react(), componentTagger()],
   resolve: { alias: { "@": path.resolve(__dirname, "./src") } },
   server: { host: "::", port: 8080, hmr: { overlay: false } },
