@@ -2,18 +2,21 @@ import { motion } from "framer-motion";
 import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-
-const codeLines = [
-  { prefix: "const", keyword: " developer", op: " = {" },
-  { prefix: "  name:", value: ' "Guillaume PITIS",' },
-  { prefix: "  title:", value: ' "Développeur Full-Stack",' },
-  { prefix: "  mail:", value: ' "gpitis@hotmail.fr",' },
-  { prefix: "  passions:", value: ' ["code", "innovation", "open-source"],' },
-  { prefix: "  available:", value: " true," },
-  { prefix: "}", op: ";" },
-];
+import { useTranslation } from "react-i18next";
 
 export function HeroSection() {
+  const { t } = useTranslation();
+
+  const codeLines = [
+    { prefix: "const", keyword: " developer", op: " = {" },
+    { prefix: "  name:", value: ' "Guillaume PITIS",' },
+    { prefix: "  title:", value: ' "Full-Stack Developper",' },
+    { prefix: "  mail:", value: ' "gpitis@hotmail.fr",' },
+    { prefix: "  passions:", value: ' ["code", "innovation", "open-source"],' },
+    { prefix: "  available:", value: " true," },
+    { prefix: "}", op: ";" },
+  ];
+  
   return (
     <section className="relative flex min-h-screen items-center justify-center overflow-hidden bg-grid">
       {/* Gradient orbs */}
@@ -30,27 +33,23 @@ export function HeroSection() {
             className="space-y-6"
           >
             <p className="font-mono text-sm text-primary text-glow">
-              &gt; Bienvenue sur mon portfolio
+              &gt; {t("hero.welcome")}
             </p>
-            <h1 className="font-display text-4xl font-bold leading-tight text-foreground sm:text-5xl lg:text-6xl">
-              Je construis des
-              <br />
-              <span className="text-primary text-glow">expériences</span>
-              <br />
-              numériques.
+            <h1 className="font-display font-bold leading-tight text-foreground sm:text-5xl lg:text-6xl flex flex-col gap-4">
+              <span>{t("hero.title1")}</span>
+              <span className="text-primary text-glow">{t("hero.title2")}</span>
+              <span>{t("hero.title3")}</span>
             </h1>
             <p className="max-w-md text-lg text-muted-foreground">
-              Développeur passionné, je crée des applications web modernes et performantes. Explorez mon CV et mes projets.
+              {t("hero.description")}
             </p>
 
             <div className="flex flex-wrap gap-3">
               <Button asChild className="gap-2 border-glow">
-                <Link to="/cv">
-                  Voir mon CV <ArrowRight className="h-4 w-4" />
-                </Link>
+                <Link to="/cv">{t("hero.cvButton")} <ArrowRight className="h-4 w-4" /></Link>
               </Button>
               <Button variant="outline" asChild className="gap-2">
-                <Link to="/projets">Mes projets</Link>
+                <Link to="/projets">{t("hero.projectsButton")}</Link>
               </Button>
             </div>
 

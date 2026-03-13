@@ -1,0 +1,72 @@
+{
+  "hero": {
+    "welcome": "Welcome to my portfolio",
+    "title1": "I build",
+    "title2": "experiences",
+    "title3": "online.",
+    "description": "Passionate developer, I create modern and performant web applications. Check out my CV and projects.",
+    "cvButton": "View my CV",
+    "projectsButton": "My projects",
+    "job title": "Full-Stack Developper"
+  },
+  "navbar": {
+    "home": "Home",
+    "cv": "CV",
+    "projects": "Projects",
+    "language": "Language"
+  },
+  "cv": {
+    "title": "My Journey",
+    "download": "Download PDF",
+    "experience": "Experience",
+    "education": "Education",
+    "skills": "Skills",
+    "experienceList": [
+        {
+            "period": "2025 — ",
+            "title": "Tech Lead and Project Manager (Angular / PHP Laravel)",
+            "company": "Abylsen Sud",
+            "description": "Responsible and Tech Lead for recruitment sites / co-optation & skills dossier for all brands of the HOUSEOFABY group"
+        },
+        {
+            "period": "2023 — 2025",
+            "title": "Full-Stack Developer (Angular / PHP)",
+            "company": "Abylsen Sud",
+            "description": "Maintenance and development of Abylsen's recruitment site and skills dossier application"
+        },
+        {
+            "period": "2021 — 2023",
+            "title": "Front-End Developer (Angular)",
+            "company": "Abylsen Sud",
+            "description": "Development of web applications with Angular for displaying data related to the electrical domain."
+        },
+        {
+            "period": "2020 — 2021",
+            "title": "Software Development Intern",
+            "company": "ThermoFischer",
+            "description": "Creation and development of license management software, databases, and tools."
+        }
+    ],
+    "educationList": [
+        {
+            "period": "2020 — 2021",
+            "title": "Master’s in Electrical Engineering",
+            "school": "University of Sherbrooke (CANADA)",
+            "description": "Specialization in Java software development and web security"
+        },
+        {
+            "period": "2015 — 2021",
+            "title": "Engineering Degree",
+            "school": "ISEN Toulon (FRANCE)",
+            "description": "Specialization in Home Automation and Smart Energy"
+        }
+    ],
+    "skillsList": [
+        { "category": "Frontend", "items": ["React", "TypeScript", "Tailwind CSS", "Next.js", "ViewJS"] },
+        { "category": "Backend", "items": ["Node.js","Express", "Java", "SpringBoot", "PHP", "Django"] },
+        { "category": "Database", "items": ["PostgreSQL", "MySQL"] },
+        { "category": "Tools", "items": ["Git", "Docker", "CI/CD", "Linux"] }
+    ]
+    }
+
+}

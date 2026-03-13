@@ -1,0 +1,71 @@
+{
+  "hero": {
+    "welcome": "Bienvenue sur mon portfolio",
+    "title1": "Je construis des",
+    "title2": "expériences",
+    "title3": "numériques.",
+    "description": "Développeur passionné, je crée des applications web modernes et performantes. Explorez mon CV et mes projets.",
+    "cvButton": "Voir mon CV",
+    "projectsButton": "Mes projets",
+    "job title": "Développeur Full-Stack"
+  },
+  "navbar": {
+    "home": "Accueil",
+    "cv": "CV",
+    "projects": "Projets",
+    "language": "Langue"
+  },
+  "cv": {
+    "title": "Mon Parcours",
+    "download": "Télécharger PDF",
+    "experience": "Expériences",
+    "education": "Formations",
+    "skills": "Compétences",
+    "experienceList": [
+      {
+        "period": "2025 — ",
+        "title": "Techlead et Pilote de projet (Angular/ PHP Laravel)",
+        "company": "Abylsen Sud",
+        "description": "Responsable et Techlead des sites de recrutements / cooptation & dossier de compétences pour l'ensemble des marques du groupe HOUSEOFABY"
+      },
+      {
+        "period": "2023 — 2025",
+        "title": "Développeur Full-Stack (Angular / PHP)",
+        "company": "Abylsen Sud",
+        "description": "Reprises et développement de du site de recrutement et de l'application de dossier de compétences d'Abylsen"
+      },
+        {
+            "period": "2021 — 2023",
+            "title": "Développeur Front-End (Angular)",
+            "company": "Abylsen Sud",
+            "description": "Développement d'applications web avec Angular pour l'affichage de données liés au domaine électrique."
+        },
+        {
+            "period": "2020 — 2021",
+            "title": "Stage en Développement logiciel",
+            "company": "ThermoFischer",
+            "description": "Création et développement d'un logiciel de gestion de licences"
+        }
+    ],
+    "educationList": [
+        {
+            "period": "2020 — 2021",
+            "title": "Maîtrise en génie électrique",
+            "school": "Université de Sherbrooke (CANADA)",
+            "description": "Spécialisation en développement logiciel Java et en web sécurité"
+        },
+        {
+            "period": "2015 — 2021",
+            "title": "Diplôme d'Ingénieur",
+            "school":"ISEN Toulon (FRANCE)",
+            "description": "Spécialisation en Domotique et Smart Energy"
+        }
+    ],
+    "skillsList": [
+        { "category": "Frontend", "items": ["React", "TypeScript", "Tailwind CSS", "Next.js", "ViewJS"] },
+        { "category": "Backend", "items": ["Node.js","Express", "Java", "SpringBoot", "PHP", "Django"] },
+        { "category": "Base de données", "items": ["PostgreSQL", "MySQL"] },
+        { "category": "Outils", "items": ["Git", "Docker", "CI/CD", "Linux"] }
+    ]
+  }
+}

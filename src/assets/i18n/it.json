@@ -1,0 +1,71 @@
+{
+  "hero": {
+    "welcome": "Benvenuto nel mio portfolio",
+    "title1": "Costruisco",
+    "title2": "esperienze",
+    "title3": "digitali.",
+    "description": "Sviluppatore appassionato, creo applicazioni web moderne e performanti. Esplora il mio CV e i miei progetti.",
+    "cvButton": "Vedi il mio CV",
+    "projectsButton": "I miei progetti",
+    "job title": "Full-Stack Developper"
+  },
+  "navbar": {
+    "home": "Home",
+    "cv": "CV",
+    "projects": "Progetti",
+    "language": "Lingua"
+  },
+  "cv": {
+    "title": "Il Mio Percorso",
+    "download": "Scarica PDF",
+    "experience": "Esperienze",
+    "education": "Formazione",
+    "skills": "Competenze",
+    "experienceList": [
+        {
+        "period": "2025 — ",
+        "title": "Tech Lead e Project Manager (Angular / PHP Laravel)",
+        "company": "Abylsen Sud",
+        "description": "Responsabile e Tech Lead dei siti di reclutamento / cooptazione & dossier competenze per tutti i marchi del gruppo HOUSEOFABY"
+        },
+        {
+        "period": "2023 — 2025",
+        "title": "Sviluppatore Full-Stack (Angular / PHP)",
+        "company": "Abylsen Sud",
+        "description": "Manutenzione e sviluppo del sito di reclutamento e dell'applicazione dossier competenze di Abylsen"
+        },
+        {
+            "period": "2021 — 2023",
+            "title": "Sviluppatore Front-End (Angular)",
+            "company": "Abylsen Sud",
+            "description": "Sviluppo di applicazioni web con Angular per la visualizzazione di dati relativi al settore elettrico."
+        },
+        {
+            "period": "2020 — 2021",
+            "title": "Tirocinio in Sviluppo Software",
+            "company": "ThermoFischer",
+            "description": "Creazione e sviluppo di software per la gestione delle licenze, basi di dati e strumenti."
+        }
+    ],
+    "educationList": [
+        {
+        "period": "2020 — 2021",
+        "title": "Laurea Magistrale in Ingegneria Elettrica",
+        "school": "Université de Sherbrooke (CANADA)",
+        "description": "Specializzazione in sviluppo software Java e sicurezza web"
+        },
+        {
+        "period": "2015 — 2021",
+        "title": "Laurea in Ingegneria",
+        "school": "ISEN Toulon (FRANCIA)",
+        "description": "Specializzazione in Domotica e Smart Energy"
+        }
+    ],
+    "skillsList": [
+        { "category": "Frontend", "items": ["React", "TypeScript", "Tailwind CSS", "Next.js", "ViewJS"] },
+        { "category": "Backend", "items": ["Node.js","Express", "Java", "SpringBoot", "PHP", "Django"] },
+        { "category": "Base de données", "items": ["PostgreSQL", "MySQL"] },
+        { "category": "Outils", "items": ["Git", "Docker", "CI/CD", "Linux"] }
+    ]
+  }
+}

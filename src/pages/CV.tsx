@@ -1,55 +1,26 @@
 import { motion } from "framer-motion";
 import { Briefcase, GraduationCap, Code, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useTranslation } from "react-i18next";
 
-const experience = [
-    {
-    period: "2025 — ",
-    title: "Techlead et Pilote de projet (Angular/ PHP Laravel)",
-    company: "Abylsen Sud",
-    description: "Responsable et Techlead des sites de recrutements / cooptation & dossier de compétences pour l'ensemble des marques du groupe HOUSEOFABY",
-  },
-  {
-    period: "2023 — 2025",
-    title: "Développeur Full-Stack (Angular / PHP)",
-    company: "Abylsen Sud",
-    description: "Reprises et développement de du site de recrutement et de l'pplication de dossier de compétences d'Abylsen",
-  },
-  {
-    period: "2021 — 2023",
-    title: "Développeur Front-End (Angular)",
-    company: "Abylsen Sud",
-    description: "Développement d'applications web avec Angular pour l'affichage de données liés au domaine électrique.",
-  },
-  {
-    period: "2020 — 2021",
-    title: "Stage en Développement logiciel",
-    company: "ThermoFischer",
-    description: "Création et développement d'un logiciel de gestion de licences",
-  },
-];
+interface ExperienceItem {
+  period: string;
+  title: string;
+  company: string;
+  description: string;
+}
 
-const education = [
-  {
-    period: "2020 — 2021",
-    title: "Maîtrise en génie électrique",
-    school: "Université de Sherbrooke (CANADA)",
-    description: "Spécialisation en développement logiciel Java et en web sécurité",
-  },
-  {
-    period: "2015 — 2021",
-    title: "Diplôme d'Ingénieur",
-    school: "ISEN Toulon (FRANCE)",
-    description: "Spécialisation en Domotique et Smart Energy",
-  },
-];
+interface EducationItem {
+  period: string;
+  title: string;
+  school: string;
+  description: string;
+}
 
-const skills = [
-  { category: "Frontend", items: ["React", "TypeScript", "Tailwind CSS", "Next.js", "ViewJS"] },
-  { category: "Backend", items: ["Node.js","Express", "Java", "SpringBoot", "PHP", "Django"] },
-  { category: "Base de données", items: ["PostgreSQL", "MySQL"] },
-  { category: "Outils", items: ["Git", "Docker", "CI/CD", "Linux"] },
-];
+interface SkillGroup {
+  category: string;
+  items: string[];
+}
 
 const fadeUp = {
   initial: { opacity: 0, y: 20 },
@@ -59,21 +30,29 @@ const fadeUp = {
 };
 
 export default function CV() {
+  const { t } = useTranslation();
+
+  // On cast les retours en tableau pour éviter les erreurs TypeScript
+  const experience = t("cv.experienceList", { returnObjects: true }) as ExperienceItem[];
+  const education = t("cv.educationList", { returnObjects: true }) as EducationItem[];
+  const skills = t("cv.skillsList", { returnObjects: true }) as SkillGroup[];
+
   return (
     <div className="min-h-screen bg-grid pt-20">
       <div className="container mx-auto max-w-4xl px-6 py-12">
+
         {/* Header */}
         <motion.div {...fadeUp} className="mb-12 flex items-center justify-between">
           <div>
             <p className="font-mono text-sm text-primary text-glow">&gt; curriculum_vitae</p>
             <h1 className="mt-2 font-display text-3xl font-bold text-foreground sm:text-4xl">
-              Mon Parcours
+              {t("cv.title")}
             </h1>
           </div>
           <a href="/CV-Pitis.pdf" download>
             <Button variant="outline" className="gap-2">
               <Download className="h-4 w-4" />
-              <span className="hidden sm:inline">Télécharger PDF</span>
+              <span className="hidden sm:inline">{t("cv.download")}</span>
             </Button>
           </a>
         </motion.div>
@@ -82,7 +61,7 @@ export default function CV() {
         <motion.section {...fadeUp} className="mb-12">
           <div className="mb-6 flex items-center gap-2 font-mono text-sm text-primary">
             <Briefcase className="h-4 w-4" />
-            <span>Expériences</span>
+            <span>{t("cv.experience")}</span>
           </div>
           <div className="space-y-6 border-l-2 border-border pl-6">
             {experience.map((exp, i) => (
@@ -108,7 +87,7 @@ export default function CV() {
         <motion.section {...fadeUp} className="mb-12">
           <div className="mb-6 flex items-center gap-2 font-mono text-sm text-primary">
             <GraduationCap className="h-4 w-4" />
-            <span>Formations</span>
+            <span>{t("cv.education")}</span>
           </div>
           <div className="space-y-6 border-l-2 border-border pl-6">
             {education.map((edu, i) => (
@@ -127,7 +106,7 @@ export default function CV() {
         <motion.section {...fadeUp}>
           <div className="mb-6 flex items-center gap-2 font-mono text-sm text-primary">
             <Code className="h-4 w-4" />
-            <span>Compétences</span>
+            <span>{t("cv.skills")}</span>
           </div>
           <div className="grid gap-4 sm:grid-cols-2">
             {skills.map((group) => (
