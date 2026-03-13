@@ -9,8 +9,9 @@ interface Country {
     name: string;
     lat: number;
     lng: number;
+    capital?: string;
     population?: number;
-    continent?: string;
+    region?: string;
     flag?: string;
 }
 
@@ -43,11 +44,11 @@ export default function MapPage() {
     }, []);
 
     // Grouper par continent
-    const continents: { [key: string]: Country[] } = {};
+    const regions: { [key: string]: Country[] } = {};
     countries.forEach((c) => {
-        const cont = c.continent || "Unknown";
-        if (!continents[cont]) continents[cont] = [];
-        continents[cont].push(c);
+        const cont = c.region || "Unknown";
+        if (!regions[cont]) regions[cont] = [];
+        regions[cont].push(c);
     });
 
     return (
@@ -60,11 +61,11 @@ export default function MapPage() {
                 {/* Sidebar scrollable */}
                 <div className="w-80 p-4 overflow-y-auto bg-gray-900 text-white border-r border-gray-700 h-[calc(100vh-56px)]">
                     <h2 className="text-xl font-bold mb-4">Pays</h2>
-                    {Object.keys(continents).map((continent) => (
+                    {Object.keys(regions).map((continent) => (
                         <div key={continent} className="mb-4">
                             <h3 className="text-lg font-semibold mb-2 border-b border-gray-700 pb-1">{continent}</h3>
                             <ul>
-                                {continents[continent].map((c) => (
+                                {regions[continent].map((c) => (
                                 <li
                                     key={c.name}
                                     className="cursor-pointer p-2 rounded hover:bg-gray-700 flex items-center gap-2"
@@ -110,7 +111,9 @@ export default function MapPage() {
                                             <br />
                                             Population: {selectedCountry.population ?? "N/A"}
                                             <br />
-                                            Continent: {selectedCountry.continent ?? "N/A"}
+                                            Capital: {selectedCountry.capital ?? "N/A"}
+                                            <br />
+                                            Continent: {selectedCountry.region ?? "N/A"}
                                         </CountryPopup>
                                     </Marker>
                                 </>

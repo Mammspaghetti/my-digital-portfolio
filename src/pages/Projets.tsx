@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Download, Github, Globe, Info } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const projects = [
   {
@@ -64,7 +65,7 @@ const projects = [
     description: "Réutilise API REST SpaghettiCountries pour afficher une carte avec les pays chargé par le back ci-dessus",
     tags: ['React', 'Leaflet', 'NodeJS'],
     githubUrl: "", // ton repo
-    linkUrl: "/map", // lien direct vers Swagger / API
+    linkUrl: "#/map", // lien direct vers Swagger / API
     info: "Phase de combat tour par tour entre 2 chats",
     color: "terminal-pink",
   },
@@ -182,10 +183,17 @@ export default function Projets() {
               <div className="mt-auto flex gap-2">
                 {project.linkUrl && (
                   <Button size="sm" variant="outline" asChild>
-                    <a href={project.linkUrl} target="_blank" className="flex items-center gap-1">
-                      <Globe className="h-3 w-3" />
-                      Lien
-                    </a>
+                    {project.linkUrl.startsWith("http") ? (
+                      <a href={project.linkUrl} target="_blank" className="flex items-center gap-1">
+                        <Globe className="h-3 w-3" />
+                        Lien
+                      </a>
+                    ) : (
+                      <Link to={project.linkUrl} className="flex items-center gap-1">
+                        <Globe className="h-3 w-3" />
+                        Lien
+                      </Link>
+                    )}
                   </Button>
                 )}
                 {project.downloadUrl && (
