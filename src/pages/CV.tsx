@@ -3,33 +3,51 @@ import { Briefcase, GraduationCap, Code, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const experience = [
+    {
+    period: "2025 — ",
+    title: "Techlead et Pilote de projet (Angular/ PHP Laravel)",
+    company: "Abylsen Sud",
+    description: "Responsable et Techlead des sites de recrutements / cooptation & dossier de compétences pour l'ensemble des marques du groupe HOUSEOFABY",
+  },
   {
-    period: "2023 — Présent",
-    title: "Développeur Full-Stack",
-    company: "Votre Entreprise",
-    description: "Développement d'applications web avec React, Node.js et bases de données SQL/NoSQL.",
+    period: "2023 — 2025",
+    title: "Développeur Full-Stack (Angular / PHP)",
+    company: "Abylsen Sud",
+    description: "Reprises et développement de du site de recrutement et de l'pplication de dossier de compétences d'Abylsen",
   },
   {
     period: "2021 — 2023",
-    title: "Développeur Frontend",
-    company: "Startup XYZ",
-    description: "Création d'interfaces utilisateur modernes avec React et TypeScript.",
+    title: "Développeur Front-End (Angular)",
+    company: "Abylsen Sud",
+    description: "Développement d'applications web avec Angular pour l'affichage de données liés au domaine électrique.",
+  },
+  {
+    period: "2020 — 2021",
+    title: "Stage en Développement logiciel",
+    company: "ThermoFischer",
+    description: "Création et développement d'un logiciel de gestion de licences",
   },
 ];
 
 const education = [
   {
-    period: "2018 — 2021",
-    title: "Master Informatique",
-    school: "Université / École",
-    description: "Spécialisation en développement logiciel et architecture.",
+    period: "2020 — 2021",
+    title: "Maîtrise en génie électrique",
+    school: "Université de Sherbrooke (CANADA)",
+    description: "Spécialisation en développement logiciel Java et en web sécurité",
+  },
+  {
+    period: "2015 — 2021",
+    title: "Diplôme d'Ingénieur",
+    school: "ISEN Toulon (FRANCE)",
+    description: "Spécialisation en Domotique et Smart Energy",
   },
 ];
 
 const skills = [
-  { category: "Frontend", items: ["React", "TypeScript", "Tailwind CSS", "Next.js"] },
-  { category: "Backend", items: ["Node.js", "Python", "Express", "Django"] },
-  { category: "Base de données", items: ["PostgreSQL", "MongoDB", "Redis"] },
+  { category: "Frontend", items: ["React", "TypeScript", "Tailwind CSS", "Next.js", "ViewJS"] },
+  { category: "Backend", items: ["Node.js","Express", "Java", "SpringBoot", "PHP", "Django"] },
+  { category: "Base de données", items: ["PostgreSQL", "MySQL"] },
   { category: "Outils", items: ["Git", "Docker", "CI/CD", "Linux"] },
 ];
 
@@ -52,17 +70,19 @@ export default function CV() {
               Mon Parcours
             </h1>
           </div>
-          <Button variant="outline" className="gap-2">
-            <Download className="h-4 w-4" />
-            <span className="hidden sm:inline">Télécharger PDF</span>
-          </Button>
+          <a href="/CV-Pitis.pdf" download>
+            <Button variant="outline" className="gap-2">
+              <Download className="h-4 w-4" />
+              <span className="hidden sm:inline">Télécharger PDF</span>
+            </Button>
+          </a>
         </motion.div>
 
         {/* Experience */}
         <motion.section {...fadeUp} className="mb-12">
           <div className="mb-6 flex items-center gap-2 font-mono text-sm text-primary">
             <Briefcase className="h-4 w-4" />
-            <span>Expérience</span>
+            <span>Expériences</span>
           </div>
           <div className="space-y-6 border-l-2 border-border pl-6">
             {experience.map((exp, i) => (
@@ -88,7 +108,7 @@ export default function CV() {
         <motion.section {...fadeUp} className="mb-12">
           <div className="mb-6 flex items-center gap-2 font-mono text-sm text-primary">
             <GraduationCap className="h-4 w-4" />
-            <span>Formation</span>
+            <span>Formations</span>
           </div>
           <div className="space-y-6 border-l-2 border-border pl-6">
             {education.map((edu, i) => (
