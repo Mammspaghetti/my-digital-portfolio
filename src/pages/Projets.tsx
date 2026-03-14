@@ -43,12 +43,12 @@ const projects = [
     color: "terminal-blue",
   },
   {
-    title: "Module de traduction pour SpaghettiSite (Work in Progress)",
+    title: "Module de traduction pour SpaghettiSite",
     description: "Développement d'un module de traduction Anglais/Français/Italien pour ce site en React",
     tags: ["React", "Node"],
     // liveUrl: "#",
     // githubUrl: "#",
-    info : '',
+    info : 'Le module est sur cette page en haut à droite dans le navbar',
     color: "terminal-green",
   },
   {
@@ -57,7 +57,7 @@ const projects = [
     tags: ["Java (11)", "JavaX", "AWT"],
     downloadUrl: "",
     githubUrl: "https://github.com/Mammspaghetti/CatFight",
-    info: "",
+    info: "Ceci est un petit jeu de combat en tour par tour",
     color: "terminal-yellow",
   },
   {
