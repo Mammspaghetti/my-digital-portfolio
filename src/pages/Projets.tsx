@@ -20,7 +20,7 @@ const projects = [
     description:
       "Lecteur de playlists de musiques/sons prédéfinis dans un dossier assets avec Java Swing.",
     tags: ["Java (21)", "JRE-21", "Swing", "Eclipse"],
-    downloadUrl: "/downloads/GPSoundSystem.jar",
+    downloadUrl: "/downloads/PacificSoundSystem.jar",
     githubUrl: "https://github.com/Mammspaghetti/GPSoundSystem",
     info: "Application desktop Java Swing capable de lire des fichiers WAV stockés dans un dossier assets.",
     color: "terminal-yellow",
