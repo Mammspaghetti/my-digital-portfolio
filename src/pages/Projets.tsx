@@ -198,7 +198,11 @@ export default function Projets() {
                 )}
                 {project.downloadUrl && (
                   <Button size="sm" variant="outline" asChild>
-                    <a href={project.downloadUrl} target="_blank" className="flex items-center gap-1">
+                    <a
+                      href={project.downloadUrl}
+                      download
+                      className="flex items-center gap-1"
+                    >
                       <Download className="h-3 w-3" />
                       Download
                     </a>
