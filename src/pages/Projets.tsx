@@ -38,7 +38,7 @@ const projects = [
     title: "Eurovision Project (Python /React)",
     description: "API complète avec Flask, flagger, authentification JWT et base PostgreSQL.",
     tags: ["Python", "React", "Flask", "PostgreSQL"],
-    liveUrl: "https://mammspaghetti.github.io/Eurovision/",
+    linkUrl: "https://mammspaghetti.github.io/Eurovision/",
     githubUrl: "https://github.com/Mammspaghetti/Eurovision",
     color: "terminal-blue",
   },
@@ -49,7 +49,7 @@ const projects = [
     downloadUrl: "",
     githubUrl: "https://github.com/Mammspaghetti/CatFight",
     info: "Ceci est un petit jeu de combat en tour par tour",
-    color: "terminal-yellow",
+    color: "terminal-green",
   },
   {
     title: "SpaghettiCountries Map Interractive (NodeJS)",
@@ -58,7 +58,7 @@ const projects = [
     githubUrl: "", // ton repo
     linkUrl: "/map", // lien direct vers Swagger / API
     info: "Phase de combat tour par tour entre 2 chats",
-    color: "terminal-pink",
+    color: "terminal-blue",
   },
   {
     title: "MyShop BACK",
@@ -66,7 +66,7 @@ const projects = [
     tags: ["Java", "SpringBoot", "JPA/Hibernate", "MySQL", "Maven"],
     linkUrl: "#",
     githubUrl: "#",
-    color: "terminal-blue",
+    color: "terminal-pink",
   },
   {
     title: "MyShop Front",
@@ -74,7 +74,7 @@ const projects = [
     tags: ["React", "Lovable"],
     linkUrl: "https://mammspaghetti.github.io/MyShop/",
     githubUrl: "#",
-    color: "terminal-green",
+    color: "terminal-blue",
   },
   // {
   //   title: "CLI Tool en Rust",
