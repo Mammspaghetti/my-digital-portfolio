@@ -20,7 +20,7 @@ const projects = [
     description:
       "Lecteur de playlists de musiques/sons prédéfinis dans un dossier assets avec Java Swing.",
     tags: ["Java (21)", "JRE-21", "Swing", "Eclipse"],
-    downloadUrl: "https://github.com/Mammspaghetti/GPSoundSystem/releases/download/v1.0/PacificSoundSystem.jar",
+    downloadUrl: "https://github.com/Mammspaghetti/GPSoundSystem/archive/refs/tags/v1.0.zip",
     githubUrl: "https://github.com/Mammspaghetti/GPSoundSystem",
     info: "Application desktop Java Swing capable de lire des fichiers WAV stockés dans un dossier assets.",
     color: "terminal-yellow",
@@ -35,21 +35,12 @@ const projects = [
     color: "terminal-pink",
   },
   {
-    title: "TODO (Python)",
-    description: "API complète avec Flask/Django, authentification JWT et base PostgreSQL.",
-    tags: ["Python", "Flask", "PostgreSQL"],
-    // liveUrl: "#",
-    // githubUrl: "#",
+    title: "Eurovision Project (Python /React)",
+    description: "API complète avec Flask, flagger, authentification JWT et base PostgreSQL.",
+    tags: ["Python", "React", "Flask", "PostgreSQL"],
+    liveUrl: "https://mammspaghetti.github.io/Eurovision/",
+    githubUrl: "https://github.com/Mammspaghetti/Eurovision",
     color: "terminal-blue",
-  },
-  {
-    title: "Module de traduction pour SpaghettiSite",
-    description: "Développement d'un module de traduction Anglais/Français/Italien pour ce site en React",
-    tags: ["React", "Node"],
-    // liveUrl: "#",
-    // githubUrl: "#",
-    info : 'Le module est sur cette page en haut à droite dans le navbar',
-    color: "terminal-green",
   },
   {
     title: "CatFight (Work in Progress)",
@@ -68,6 +59,22 @@ const projects = [
     linkUrl: "/map", // lien direct vers Swagger / API
     info: "Phase de combat tour par tour entre 2 chats",
     color: "terminal-pink",
+  },
+  {
+    title: "MyShop BACK",
+    description: "Exemple de site de e-Commerce",
+    tags: ["Java", "SpringBoot", "JPA/Hibernate", "MySQL", "Maven"],
+    linkUrl: "#",
+    githubUrl: "#",
+    color: "terminal-blue",
+  },
+  {
+    title: "MyShop Front",
+    description: "Exemple de site de e-Commerce",
+    tags: ["React", "Lovable"],
+    linkUrl: "https://mammspaghetti.github.io/MyShop/",
+    githubUrl: "#",
+    color: "terminal-green",
   },
   // {
   //   title: "CLI Tool en Rust",
