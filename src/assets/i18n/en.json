@@ -7,7 +7,8 @@
     "description": "Passionate developer, I create modern and performant web applications. Check out my CV and projects.",
     "cvButton": "View my CV",
     "projectsButton": "My projects",
-    "job title": "Full-Stack Developper"
+    "job title": "Full-Stack Developper",
+    "launch project": "Launch Projects"
   },
   "navbar": {
     "home": "Home",
@@ -21,6 +22,7 @@
     "experience": "Experience",
     "education": "Education",
     "skills": "Skills",
+    "learning": "Learning",
     "experienceList": [
         {
             "period": "2025 — ",
@@ -66,7 +68,13 @@
         { "category": "Backend", "items": ["Node.js","Express", "Java", "SpringBoot", "PHP", "Django"] },
         { "category": "Database", "items": ["PostgreSQL", "MySQL"] },
         { "category": "Tools", "items": ["Git", "Docker", "CI/CD", "Linux"] }
+    ],
+    "willSkillsList": [
+        { "category": "Frontend", "items": [""] },
+        { "category": "Backend", "items": ["Sprint Boot", "Python"] },
+        { "category": "Database", "items": ["GraphQL", "MangoDB"] },
+        { "category": "Other", "items": ["Cloud"] }
     ]
-    }
+  }
 
 }

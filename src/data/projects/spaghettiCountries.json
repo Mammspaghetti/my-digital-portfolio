@@ -1,0 +1,119 @@
+{
+  "title": "SpaghettiCountries Map Interactive",
+  "description": "Application web interactive permettant d'explorer les pays du monde sur une carte. Le backend Java Spring Boot récupère et expose les données des pays via une API REST consommée par le frontend React.",
+  "tags": [
+    "Java 21",
+    "Spring Boot",
+    "React",
+    "Vite",
+    "Leaflet",
+    "REST API",
+    "Render",
+    "GitHub Pages"
+  ],
+  "githubUrl": "https://github.com/Mammspaghetti/SpaghettiCountries",
+  "linkUrl": "/map",
+
+  "info": "Application full-stack permettant d'afficher et d'explorer les pays du monde sur une carte interactive.",
+
+  "color": "terminal-blue",
+
+  "sections": {
+    "architecture": {
+      "title": "Architecture",
+      "description": "Application séparée en deux parties : un backend Java Spring Boot chargé de récupérer et exposer les données, et un frontend React chargé de les afficher.",
+      "flow": [
+        "API externe des pays",
+        "↓",
+        "Backend Java 21 / Spring Boot",
+        "↓",
+        "API REST",
+        "↓",
+        "Frontend React / Vite",
+        "↓",
+        "Carte interactive Leaflet"
+      ]
+    },
+
+    "backend": {
+      "title": "Backend",
+      "technology": "Java 21 + Spring Boot",
+      "description": "Le backend récupère les données des pays depuis une API externe et les expose au frontend via une API REST.",
+      "technologies": [
+        "Java 21",
+        "Spring Boot",
+        "REST API",
+        "HTTP Client"
+      ],
+      "responsibilities": [
+        "Récupérer les données depuis une API externe",
+        "Transformer et structurer les données",
+        "Exposer des endpoints REST",
+        "Fournir uniquement les données nécessaires au frontend"
+      ]
+    },
+
+    "frontend": {
+      "title": "Frontend",
+      "technology": "React + Vite",
+      "description": "Le frontend React consomme l'API du backend et affiche les pays sous forme de carte interactive.",
+      "technologies": [
+        "React",
+        "TypeScript",
+        "Vite",
+        "Leaflet"
+      ],
+      "responsibilities": [
+        "Consommer l'API REST",
+        "Afficher les pays sur une carte",
+        "Gérer les interactions utilisateur",
+        "Afficher les informations d'un pays"
+      ]
+    },
+
+    "deployment": {
+      "title": "Déploiement",
+      "backend": {
+        "platform": "Render",
+        "description": "Le backend Spring Boot est déployé sur Render afin de rendre l'API REST accessible publiquement au frontend."
+      },
+      "frontend": {
+        "platform": "GitHub Pages",
+        "description": "Le frontend React est compilé avec Vite puis déployé sur GitHub Pages."
+      }
+    },
+
+    "why": {
+      "title": "Pourquoi ces technologies ?",
+      "backend": {
+        "Java": "Java 21 permet de développer un backend moderne, robuste et fortement typé.",
+        "Spring Boot": "Spring Boot simplifie la création d'API REST et permet de mettre en place une architecture backend structurée.",
+        "REST": "Une API REST permet de découpler complètement le frontend du backend."
+      },
+      "frontend": {
+        "React": "React permet de construire une interface interactive basée sur des composants réutilisables.",
+        "Vite": "Vite fournit un environnement de développement rapide et génère une version optimisée du frontend pour la production.",
+        "Leaflet": "Leaflet permet d'intégrer une carte interactive et de représenter graphiquement les pays."
+      },
+      "deployment": {
+        "Render": "Render permet de déployer facilement le backend et de le rendre accessible via une URL publique.",
+        "GitHubPages": "GitHub Pages permet d'héberger gratuitement le frontend statique généré par Vite."
+      }
+    },
+
+    "skills": {
+      "title": "Compétences mises en œuvre",
+      "items": [
+        "Conception d'une architecture full-stack",
+        "Développement d'une API REST",
+        "Consommation d'une API externe",
+        "Communication frontend / backend",
+        "Développement React avec TypeScript",
+        "Gestion d'une carte interactive",
+        "Build et déploiement avec Vite",
+        "Déploiement backend sur Render",
+        "Déploiement frontend sur GitHub Pages"
+      ]
+    }
+  }
+}

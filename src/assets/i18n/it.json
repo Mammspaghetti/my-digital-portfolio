@@ -7,7 +7,8 @@
     "description": "Sviluppatore appassionato, creo applicazioni web moderne e performanti. Esplora il mio CV e i miei progetti.",
     "cvButton": "Vedi il mio CV",
     "projectsButton": "I miei progetti",
-    "job title": "Full-Stack Developper"
+    "job title": "Full-Stack Developper",
+    "launch project": "Avviare i progetti"
   },
   "navbar": {
     "home": "Home",
@@ -66,6 +67,12 @@
         { "category": "Backend", "items": ["Node.js","Express", "Java", "SpringBoot", "PHP", "Django"] },
         { "category": "Base de données", "items": ["PostgreSQL", "MySQL"] },
         { "category": "Outils", "items": ["Git", "Docker", "CI/CD", "Linux"] }
+    ],
+    "willSkillsList": [
+        { "category": "Frontend", "items": [""] },
+        { "category": "Backend", "items": ["Sprint Boot", "Python"] },
+        { "category": "Database", "items": ["GraphQL", "MangoDB"] },
+        { "category": "Other", "items": ["Cloud"] }
     ]
   }
 }

@@ -1,0 +1,46 @@
+[  
+  {
+    "title": "API REST (NodeJS)",
+    "description": "Créer une API qui centralise et expose des informations provenant d’une API publique, afin de les rendre facilement accessibles et manipulables.",
+    "tags": ["NodeJS", "NestJS", "Swagger", "Render (hébergement)", "TypeScript"],
+    "githubUrl": "https://github.com/Mammspaghetti/SpaghettiCountries",
+    "linkUrl": "https://spaghetticountries.onrender.com/api",
+    "info": "Projet en cours de développement, exposé sur Render.",
+    "color": "terminal-blue"
+  },
+    {
+    "title": "Mini Shop",
+    "description": "Développement d'un site d'e-Commerce, pour s'entrainer dans l'utilisatuion de Spring Boot",
+    "tags": ["Java (21)", "JRE-21", "Spring-Boot 4.2", "Swing", "Eclipse"],
+    "downloadUrl": "",
+    "githubUrl": "https://github.com/Mammspaghetti/MyShop",
+    "color": "terminal-green"
+  },
+  {
+    "title": "Pacific Sound System (Java)",
+    "description": "Lecteur de playlists de musiques/sons prédéfinis dans un dossier assets avec Java Swing.",
+    "tags": ["Java (21)", "JRE-21", "Swing", "Eclipse"],
+    "downloadUrl": "https://github.com/Mammspaghetti/GPSoundSystem/archive/refs/tags/v1.0.zip",
+    "githubUrl": "https://github.com/Mammspaghetti/GPSoundSystem",
+    "info": "Application desktop Java Swing capable de lire des fichiers WAV stockés dans un dossier assets.",
+    "color": "terminal-yellow"
+  },
+  {
+    "title": "Eurovision Project (Python / React)",
+    "description": "API complète avec Flask, flagger, authentification JWT et base PostgreSQL.",
+    "tags": ["Python", "React", "Flask", "PostgreSQL"],
+    "linkUrl": "https://mammspaghetti.github.io/Eurovision/",
+    "githubUrl": "https://github.com/Mammspaghetti/Eurovision",
+    "info": "Site de vote pour l'eurovision",
+    "color": "terminal-pink"
+  },
+  {
+    "title": "SpaghettiCountries Map Interractive (NodeJS)",
+    "description": "Réutilise API REST SpaghettiCountries pour afficher une carte avec les pays chargé par le back ci-dessus",
+    "tags": ["React", "Leaflet", "NodeJS"],
+    "githubUrl": "https://github.com/Mammspaghetti/SpaghettiCountries/tree/main", 
+    "linkUrl": "/map",
+    "info": "Permet d'afficher une carte plus liste de pays avec des informations quand on clique dessus",
+    "color": "terminal-blue"
+  }
+]

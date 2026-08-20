@@ -8,15 +8,16 @@ export function HeroSection() {
   const { t } = useTranslation();
 
   const codeLines = [
-    { prefix: "const", keyword: " developer", op: " = {" },
+    { prefix: "const", keyword: " player", op: " = {" },
     { prefix: "  name:", value: ' "Guillaume PITIS",' },
-    { prefix: "  title:", value: ' "Full-Stack Developper",' },
-    { prefix: "  mail:", value: ' "gpitis@hotmail.fr",' },
-    { prefix: "  passions:", value: ' ["code", "innovation", "open-source"],' },
-    { prefix: "  available:", value: " true," },
+    { prefix: "  class:", value: ' "Full-Stack Developer",' },
+    { prefix: "  level:", value: ' "4-5 years XP",' },
+    { prefix: "  stack:", value: ' ["Angular", "React", "Java", ".NET"],' },
+    { prefix: "  mindset:", value: ' "Build. Break. Improve.",' },
+
     { prefix: "}", op: ";" },
   ];
-  
+    
   return (
     <section className="relative flex min-h-screen items-center justify-center overflow-hidden bg-grid">
       {/* Gradient orbs */}
@@ -81,6 +82,7 @@ export function HeroSection() {
             className="hidden lg:block"
           >
             <div className="rounded-lg border border-border bg-card p-6 font-mono text-sm shadow-2xl">
+
               {/* Window dots */}
               <div className="mb-4 flex gap-2">
                 <span className="h-3 w-3 rounded-full bg-destructive/70" />
@@ -88,6 +90,7 @@ export function HeroSection() {
                 <span className="h-3 w-3 rounded-full bg-terminal-green/70" />
               </div>
 
+              {/* CODE */}
               <div className="space-y-1">
                 {codeLines.map((line, i) => (
                   <motion.div
@@ -100,15 +103,51 @@ export function HeroSection() {
                     <span className="mr-4 select-none text-muted-foreground/50">
                       {String(i + 1).padStart(2, "0")}
                     </span>
+
                     <span>
                       <span className="text-terminal-pink">{line.prefix}</span>
-                      {line.keyword && <span className="text-terminal-blue">{line.keyword}</span>}
-                      {line.value && <span className="text-terminal-green">{line.value}</span>}
-                      {line.op && <span className="text-foreground">{line.op}</span>}
+                      {line.keyword && (
+                        <span className="text-terminal-blue">{line.keyword}</span>
+                      )}
+                      {line.value && (
+                        <span className="text-terminal-green">{line.value}</span>
+                      )}
+                      {line.op && (
+                        <span className="text-foreground">{line.op}</span>
+                      )}
                     </span>
                   </motion.div>
                 ))}
               </div>
+
+              {/* 🔥 SEPARATOR */}
+              <div className="my-6 flex items-center gap-3">
+                <div className="h-px flex-1 bg-border" />
+                <span className="text-[10px] text-muted-foreground tracking-widest">
+                  LAUNCH SYSTEM
+                </span>
+                <div className="h-px flex-1 bg-border" />
+              </div>
+
+              {/* 🚀 CTA ALIGNÉ */}
+              <Button
+                asChild
+                className="w-full relative overflow-hidden bg-gradient-to-r from-primary to-accent text-black px-6 py-5 text-base shadow-lg shadow-primary/30 hover:scale-105 transition-transform group"
+              >
+                <Link to="/projets" className="flex items-center justify-center gap-2">
+                  
+                  {/* Rocket animation */}
+                  <span className="relative flex items-center gap-2 group-hover:animate-bounce">
+                    🚀 {t("hero.launch project")}
+                  </span>
+
+                  <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-2" />
+
+                  {/* glow */}
+                  <span className="absolute inset-0 opacity-0 group-hover:opacity-20 bg-white transition-opacity" />
+                </Link>
+              </Button>
+
             </div>
           </motion.div>
         </div>

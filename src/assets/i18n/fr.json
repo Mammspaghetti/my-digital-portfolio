@@ -7,7 +7,8 @@
     "description": "Développeur passionné, je crée des applications web modernes et performantes. Explorez mon CV et mes projets.",
     "cvButton": "Voir mon CV",
     "projectsButton": "Mes projets",
-    "job title": "Développeur Full-Stack"
+    "job title": "Développeur Full-Stack",
+    "launch project": "Lancer les Projets"
   },
   "navbar": {
     "home": "Accueil",
@@ -21,18 +22,19 @@
     "experience": "Expériences",
     "education": "Formations",
     "skills": "Compétences",
+    "learning": "En cours",
     "experienceList": [
       {
         "period": "2025 — ",
         "title": "Techlead et Pilote de projet (Angular/ PHP Laravel)",
         "company": "Abylsen Sud",
-        "description": "Responsable et Techlead des sites de recrutements / cooptation & dossier de compétences pour l'ensemble des marques du groupe HOUSEOFABY"
+        "description": "Responsable / Techlead des sites de recrutements / cooptation & dossier de compétences pour l'ensemble des marques du groupe HOUSE OF ABY."
       },
       {
         "period": "2023 — 2025",
         "title": "Développeur Full-Stack (Angular / PHP)",
         "company": "Abylsen Sud",
-        "description": "Reprises et développement de du site de recrutement et de l'application de dossier de compétences d'Abylsen"
+        "description": "Reprises et développement de du site de recrutement et de l'application de dossier de compétences d'Abylsen."
       },
         {
             "period": "2021 — 2023",
@@ -44,7 +46,7 @@
             "period": "2020 — 2021",
             "title": "Stage en Développement logiciel",
             "company": "ThermoFischer",
-            "description": "Création et développement d'un logiciel de gestion de licences"
+            "description": "Création et développement d'un logiciel de gestion de licences."
         }
     ],
     "educationList": [
@@ -66,6 +68,12 @@
         { "category": "Backend", "items": ["Node.js","Express", "Java", "SpringBoot", "PHP", "Django"] },
         { "category": "Base de données", "items": ["PostgreSQL", "MySQL"] },
         { "category": "Outils", "items": ["Git", "Docker", "CI/CD", "Linux"] }
+    ],
+    "willSkillsList": [
+        { "category": "Frontend", "items": [""] },
+        { "category": "Backend", "items": ["Sprint Boot", "Python"] },
+        { "category": "Database", "items": ["GraphQL", "MangoDB"] },
+        { "category": "Other", "items": ["Cloud"] }
     ]
   }
 }

@@ -1,0 +1,113 @@
+// [
+//   // {
+//   //   title: "Portfolio SpaghettiSite (React)",
+//   //   description:
+//   //     "Portfolio interactif présentant mes mini-projets et applis, développé avec React, Tailwind et Framer Motion.",
+//   //   tags: ["React", "TypeScript", "TailwindCSS", "Framer Motion", "Portfolio"],
+//   //   linkUrl: "https://mammspaghetti.github.io/my-digital-portfolio/",
+//   //   githubUrl: "https://github.com/Mammspaghetti/my-digital-portfolio",
+//   //   info: 'Création d\'un portfolio avec React. Design généré avec <a href="https://lovable.dev/" target="_blank">Lovable</a>.',
+//   //   color: "terminal-green",
+//   // },
+//   // {
+//   //   title: "Pacific Sound System (Java)",
+//   //   description:
+//   //     "Lecteur de playlists de musiques/sons prédéfinis dans un dossier assets avec Java Swing.",
+//   //   tags: ["Java (21)", "JRE-21", "Swing", "Eclipse"],
+//   //   downloadUrl: "https://github.com/Mammspaghetti/GPSoundSystem/archive/refs/tags/v1.0.zip",
+//   //   githubUrl: "https://github.com/Mammspaghetti/GPSoundSystem",
+//   //   info: "Application desktop Java Swing capable de lire des fichiers WAV stockés dans un dossier assets.",
+//   //   color: "terminal-yellow",
+//   // },
+//   // {
+//   //   title: "API REST (NodeJS)",
+//   //   description: "Créer une API qui centralise et expose des informations provenant d’une API publique, afin de les rendre facilement accessibles et manipulables.",
+//   //   tags: ["NodeJS", "NestJS", "Swagger", "Render (hébergement)", "TypeScript"],
+//   //   githubUrl: "https://github.com/Mammspaghetti/SpaghettiCountries", // ton repo
+//   //   linkUrl: "https://spaghetticountries.onrender.com/api", // lien direct vers Swagger / API
+//   //   info: "Projet en cours de développement, exposé sur Render.",
+//   //   color: "terminal-pink",
+//   // },
+//   // {
+//   //   title: "Eurovision Project (Python /React)",
+//   //   description: "API complète avec Flask, flagger, authentification JWT et base PostgreSQL.",
+//   //   tags: ["Python", "React", "Flask", "PostgreSQL"],
+//   //   linkUrl: "https://mammspaghetti.github.io/Eurovision/",
+//   //   githubUrl: "https://github.com/Mammspaghetti/Eurovision",
+//   //   color: "terminal-blue",
+//   // },
+//   // {
+//   //   title: "CatFight (Work in Progress)",
+//   //   description: "Phase de Combat en tour par tour (Pokémon Like)",
+//   //   tags: ["Java (11)", "JavaX", "AWT"],
+//   //   downloadUrl: "",
+//   //   githubUrl: "https://github.com/Mammspaghetti/CatFight",
+//   //   info: "Ceci est un petit jeu de combat en tour par tour",
+//   //   color: "terminal-green",
+//   // },
+//   // {
+//   //   title: "SpaghettiCountries Map Interractive (NodeJS)",
+//   //   description: "Réutilise API REST SpaghettiCountries pour afficher une carte avec les pays chargé par le back ci-dessus",
+//   //   tags: ['React', 'Leaflet', 'NodeJS'],
+//   //   githubUrl: "", // ton repo
+//   //   linkUrl: "/map", // lien direct vers Swagger / API
+//   //   info: "Phase de combat tour par tour entre 2 chats",
+//   //   color: "terminal-blue",
+//   // },
+//   // {
+//   //   title: "MyShop BACK",
+//   //   description: "Exemple de site de e-Commerce",
+//   //   tags: ["Java", "SpringBoot", "JPA/Hibernate", "MySQL", "Maven"],
+//   //   linkUrl: "#",
+//   //   githubUrl: "#",
+//   //   color: "terminal-pink",
+//   // },
+//   // {
+//   //   title: "MyShop Front",
+//   //   description: "Exemple de site de e-Commerce",
+//   //   tags: ["React", "Lovable"],
+//   //   linkUrl: "https://mammspaghetti.github.io/MyShop/",
+//   //   githubUrl: "#",
+//   //   color: "terminal-blue",
+//   // },
+//   // {
+//   //   title: "CLI Tool en Rust",
+//   //   description: "Outil en ligne de commande performant pour le traitement de fichiers.",
+//   //   tags: ["Rust", "CLI"],
+//   //   liveUrl: "#",
+//   //   githubUrl: "#",
+//   //   color: "terminal-pink",
+//   // },
+//   // {
+//   //   title: "App Mobile React Native",
+//   //   description: "Application mobile cross-platform avec navigation et state management.",
+//   //   tags: ["React Native", "TypeScript", "Expo"],
+//   //   liveUrl: "#",
+//   //   githubUrl: "#",
+//   //   color: "terminal-blue",
+//   // },
+//   // {
+//   //   title: "Dashboard Vue.js",
+//   //   description: "Tableau de bord interactif avec graphiques et données en temps réel.",
+//   //   tags: ["Vue.js", "D3.js", "WebSocket"],
+//   //   liveUrl: "#",
+//   //   githubUrl: "#",
+//   //   color: "terminal-green",
+//   // },
+//   // {
+//   //   title: "Microservices Go",
+//   //   description: "Architecture microservices avec Docker, gRPC et message queues.",
+//   //   tags: ["Go", "Docker", "gRPC"],
+//   //   liveUrl: "#",
+//   //   githubUrl: "#",
+//   //   color: "terminal-yellow",
+//   // },
+//   // {
+//   //   title: "Game Engine C++",
+//   //   description: "Petit moteur de jeu 2D avec rendu OpenGL et système ECS.",
+//   //   tags: ["C++", "OpenGL", "ECS"],
+//   //   liveUrl: "#",
+//   //   githubUrl: "#",
+//   //   color: "terminal-pink",
+//   // },
+// ]
